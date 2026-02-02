@@ -1,4 +1,4 @@
-const H4Component = () => {
-    return <h4>Il mio h4</h4>;
+const H4Component = (props) => {
+    return <h4>{props.content}</h4>;
 };
 export default H4Component;
