@@ -3,6 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import H4Component from "./components/H4Component";
+import ImageComponent from "./components/ImageComponent";
 
 function App() {
     const [count, setCount] = useState(0);
@@ -26,7 +27,11 @@ function App() {
                 <button onClick={() => setCount((count) => count + 1)}>
                     count is {count}
                 </button>
-                <H4Component content="questo è l'h4 con props" />
+                <H4Component content="questo è un'immagine casuale" />
+                <ImageComponent
+                    src="https://picsum.photos/400/300"
+                    alt="immagine casuale"
+                />
                 <p>
                     Edit <code>src/App.jsx</code> and save to test HMR
                 </p>
